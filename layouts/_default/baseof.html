@@ -2,6 +2,7 @@
 <html lang="{{ .Lang }}" data-figures="{{ .Params.figurePositionShow }}"{{ if .IsPage }} class="page"{{ end }}>
   <head>
     {{- partial "head" . }}
+    {{ partial "site_schema.html" . }}
     <!-- styles definition-->
     {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
     {{ $mainSassFile :=  "sass/main.sass" }}
