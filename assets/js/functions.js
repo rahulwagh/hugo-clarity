@@ -130,7 +130,7 @@ function copyToClipboard(str) {
   }
 }
 
-function loadSvg(file, parent, path = 'icons/') {
+function loadSvg(file, parent, path = '/icons/') {
   const link = `${parentURL}${path}${file}.svg`;
   fetch(link)
   .then((response) => {
