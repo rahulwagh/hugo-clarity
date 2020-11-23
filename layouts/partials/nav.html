@@ -24,7 +24,7 @@
       {{- $link := .RelPermalink }}
       {{- range .Site.Data.menu }}
       <div class = 'nav_parent{{ if eq .link $link }} nav_active{{ end}}'>
-        <a href = '{{ absURL .link }}' class = 'nav_item'>{{ .name }} {{ with .submenu }}<img src= {{ absURL "icons/caret-icon.svg" }} alt="icon" class="nav_icon">{{ end }}</a>
+        <a href = '{{ absURL .link }}' class = 'nav_item'>{{ .name }} {{ with .submenu }}<img src= {{ absURL "icon/caret-icon.svg" }} alt="icon" class="nav_icon">{{ end }}</a>
         {{- with .submenu }}
         <div class = 'nav_sub'>
           {{- range . }}
